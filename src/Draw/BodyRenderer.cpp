@@ -71,7 +71,7 @@ void BodyRenderer::drawHand(Hand hand, Joint handJoint) {
         ofFill();
 		if(hand.isOpen()) ofSetColor(ofColor::green);
 		else ofSetColor(ofColor::red);
-		ofCircle(handJoint.getPoint(), 25);
+		ofCircle(handJoint.getPoint(), 0.025);
 	}
 }
 
@@ -169,7 +169,7 @@ void BodyRenderer::drawJoint(Joint joint) {
 	if(joint.getTrackingState() == TRACKED || joint.getTrackingState() == INFERRED) {
 		ofSetColor(ofColor::lightGray);
 		ofFill();
-		ofCircle(joint.getPoint(), 10);
+		ofCircle(joint.getPoint(), 0.025);
 	}
 }
 
